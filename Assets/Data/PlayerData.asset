@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8972fd2dcf38949b5b4bdcc11289d3, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  PlayerScale: 0.35
+  MaxHealth: 3
+  CurrentHealth: 2
+  ForwardSpeed: 2
+  RotationSpeed: 400

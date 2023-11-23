@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41184b8951989084e94aef1b9aed7a6c, type: 3}
+  m_Name: BallSettings
+  m_EditorClassIdentifier: 
+  BallCreatedAudioId: BallCreated
+  BallBounceAudioId: BallBounce
+  BallBounceMinVolume: 0.01
+  BallBounceMaxVolume: 0.05
+  ballPrefab: {fileID: 4294476993630331721, guid: 10932c74b928c444cb7351c4a4fe72c6, type: 3}
+  BallAmount: 10
+  BallMinRadius: 0.2
+  BallMaxRadius: 1
+  BallMinSpeed: 0.5
+  BallMaxSpeed: 1.5
+  BallMinTorque: -5
+  BallMaxTorque: 5
+  BallMassMultiplier: 8
+  BallMinCreationTime: 0.1
+  BallMaxCreationTime: 0.15
