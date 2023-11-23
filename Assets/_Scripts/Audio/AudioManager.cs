@@ -35,7 +35,7 @@ public class AudioManager : Singleton<AudioManager>
                 instance.transform.SetParent(transform);
             }
             else
-                logger.LogWarning("Duplicate audio name found: " + audioItem.audioName);
+                logger.LogWarning("Duplicate audio name found: " + audioItem.audioName, this);
         }
     }
 
@@ -43,6 +43,12 @@ public class AudioManager : Singleton<AudioManager>
     {
         if (audioDictionary.TryGetValue(audioName, out AudioItem audioItem))
         {
+            if (audioItem == null)
+            {
+                logger.LogWarning("Audio item missing!", this);
+                return;
+            }
+
             if (randomPitch)
                 audioItem.audioSource.pitch = Random.Range(0.95f, 1.05f);
             else
@@ -51,6 +57,8 @@ public class AudioManager : Singleton<AudioManager>
             audioItem.audioSource.Play();
         }
         else
-            logger.LogWarning($"Audio clip with name {audioName} not found");
+        {
+            logger.LogWarning($"Audio clip with name {audioName} not found", this);
+        }
     }
 }
